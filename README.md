@@ -42,19 +42,19 @@ It can be downloaded/loaded using the sklearn.datasets.fetch_california_housing 
 - Target: Median house value for California districts, expressed in hundreds of thousands of dollars ($100,000)
 ## Exploratory data analysis
 
-Correlation between features were carried out to see if highly correlated features are there, so that redundancy could be removed from the features. 
+##### 1. Correlation between features were carried out to see if highly correlated features are there, so that redundancy could be removed from the features. 
 
 ![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/correlation.png)
 
-Correlation shows longitude and latitude are highly correlated and one could be removed from the features list.
+##### 2. Correlation shows longitude and latitude are highly correlated and one could be removed from the features list.
 ![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/latitude_longitude_scatter_plot.png)
 
 ## Model fitting and evaluation
 
-##### Multiple models were evaluated for their performance and compared the R2 and MSE for the models.
+##### 1. Multiple models were evaluated for their performance and compared the R2 and MSE for the models.
 ![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/model_performance.png)
 
-##### The performance of GradientBoostingRegressor model was found to be the highest with very low MSEerror compared to other models that are evaluated.
+##### 2. The performance of GradientBoostingRegressor model was found to be the highest with very low MSEerror compared to other models that are evaluated.
 
 | Model                     | R2        | MSE      |
 |----------------------------|----------|----------|

@@ -1,4 +1,4 @@
-![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/scikit-learn-logo-small.png)
+![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/logo.png)
 
 
 # Project Title

@@ -51,10 +51,10 @@ Correlation shows longitude and latitude are highly correlated and one could be 
 
 ## Model fitting and evaluation
 
-- Multiple models were evaluated for their performance and compared the R2 and MSE for the models.
+##### Multiple models were evaluated for their performance and compared the R2 and MSE for the models.
 ![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/model_performance.png)
 
-- The performance of GradientBoostingRegressor model was found to be the highest with very low MSEerror compared to other models that are evaluated.
+##### The performance of GradientBoostingRegressor model was found to be the highest with very low MSEerror compared to other models that are evaluated.
 
 | Model                     | R2        | MSE      |
 |----------------------------|----------|----------|

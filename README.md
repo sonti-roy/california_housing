@@ -51,7 +51,7 @@ It can be downloaded/loaded using the sklearn.datasets.fetch_california_housing 
 
 ## Model fitting and evaluation
 
-##### 1. Multiple models were evaluated for their performance and compared the R2 and MSE for the models.
+##### 1. Multiple models were evaluated for their performance and compared the R2 and MSE for the models to select the best model.
 ![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/model_performance.png)
 
 ##### 2. The performance of GradientBoostingRegressor model was found to be the highest with very low MSEerror compared to other models that are evaluated.
@@ -66,35 +66,48 @@ It can be downloaded/loaded using the sklearn.datasets.fetch_california_housing 
 | DecisionTreeRegressor      | 0.585701 | 0.413039 |
 | GradientBoostingRegressor  | 0.772826 | 0.226484 |
 
+##### 3. Model prediction comparasion with true values
 
+![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/true_vs_prediction.png)
+
+Shows a good colinearity which is also visible from the score.
 
 ## Cross valadation
 
-To evaluate the GradientBoostingRegressor model further and check for over fitting, cross valadation is performed.
+##### To evaluate the GradientBoostingRegressor model further and check for over fitting, cross valadation is performed.
 
+###### 1. cross validation of the model with complete dataset with cv = 5 shows reduced score than thge model
+        
+| Score 1      | Score 2      | Score 3      | Score 4      | Score 5      |
+|--------------|--------------|--------------|--------------|--------------|
+| 0.62413216   | 0.6943188    | 0.71206383   | 0.65481236   | 0.67672756   |
+
+###### 2. cross validation of the model with split dataset shows similar accuracy as the fitted model.
+
+| Score 1      | Score 2      | Score 3      | Score 4      | Score 5      |
+|--------------|--------------|--------------|--------------|--------------|
+| 0.78189507   | 0.78282526   | 0.78389246   | 0.80503452   | 0.80055348   |
+
+###### Inference - The model need further tuning to match the score in both the scanerio.
 
 ## Key Takeaways
 
-What did you learn while building this project? What challenges did you face and how did you overcome them?
+How to perform a basic Ml model fitting and evaluate the performance of the model.
 
 
-## How to Run
+## Code 
 
-The code is built on Google Colab on an iPython Notebook. 
+The code is is avaiable in a python notebook model.ipynb. To view the code please click below
 
-```bash
-Simply download the repository, upload the notebook and dataset on colab, and hit play!
-```
+[Click here](https://github.com/sonti-roy/california_housing/blob/main/model.ipynb)
 
 
 ## Roadmap
 
-What are the future modification you plan on making to this project?
-
-- Try more models
-
-- Wrapped Based Feature Selection
-
+1. **Model Exploration**
+2. **Model Optimization**
+3. **Hyperparameter Tuning**
+4. **Exploring Other Ways to Improve Model**
 
 ## Libraries 
 
@@ -102,20 +115,6 @@ What are the future modification you plan on making to this project?
 
 **Packages:** Sklearn, Matplotlib, Pandas, Seaborn
 
-
-## FAQ
-
-#### How does the linear regression model work?
-
-Answer 1
-
-#### How do you train the model on a new dataset?
-
-Answer 2
-
-#### What is the California Housing Dataset?
-
-Answer 2
 ## Acknowledgements
 
 All the links, blogs, videos, papers you referred to/took inspiration from for building this project. 

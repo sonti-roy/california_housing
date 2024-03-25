@@ -2,13 +2,19 @@
 
 
 # Project Title
-Machine learning model development for predicting median house value
+Machine learning model development for predicting median house value 
 
 
 ## Implementation Details
 
 - Dataset: California Housing Dataset (view below for more details)
-- Model: [Linear Regressor](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
+- Model evaluated: 
+  - [Linear Regressor](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
+  - [KNeighborsRegression](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html)
+  - [SGDRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDRegressor.html)
+  - [BayesianRidge](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.BayesianRidge.html)
+  - [DecisionTreeRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html)
+  - [GradientBoostingRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html)
 - Input: 8 features - Median Houshold income, House Area, ...
 - Output: House Price
 
@@ -34,6 +40,14 @@ It can be downloaded/loaded using the sklearn.datasets.fetch_california_housing 
     - Latitude block group latitude
     - Longitude block group longitude
 - Target: Median house value for California districts, expressed in hundreds of thousands of dollars ($100,000)
+## Exploratory data analysis
+
+Correlation between features were carried out to see if highly correlated features are there, so that redundancy could be removed from the features. 
+![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/correlation.png)
+
+Correlation shows longitude and latitude are highly correlated and one could be removed from the features list.
+![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/latitude_longitude_scatter_plot.png)
+
 
 ## Evaluation and Results
 
@@ -46,7 +60,6 @@ As you can see from the above image, the model has signifcant amount of error in
 | ------------- | ------------- |
 | R2 Score      | 0.11          |
 | MSE           | 0.76          |
-| sdfsdfs       | 0.77          | 
 
 The above quant results show that <>
 ## Key Takeaways

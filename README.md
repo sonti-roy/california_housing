@@ -51,27 +51,28 @@ Correlation shows longitude and latitude are highly correlated and one could be 
 
 ## Model fitting and evaluation
 
-Multiple models were evaluated for their performance and compared the R2 and MSE for the models.
+- Multiple models were evaluated for their performance and compared the R2 and MSE for the models.
 ![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/model_performance.png)
 
-The performance of GradientBoostingRegressor model was found to be the highest with very low MSEerror compared to other models that are evaluated.
+- The performance of GradientBoostingRegressor model was found to be the highest with very low MSEerror compared to other models that are evaluated.
 
-![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/model_performance_table.png)
+| Model                     | R2        | MSE      |
+|----------------------------|----------|----------|
+| SVR                        | -0.020689| 1.017586 |
+| LinearRegression           | 0.582674 | 0.416057 |
+| KNeighborsRegression       | 0.136115 | 0.861259 |
+| SGDRegressor               | 0.001655 | 0.995310 |
+| BayesianRidge              | 0.582681 | 0.416051 |
+| DecisionTreeRegressor      | 0.585701 | 0.413039 |
+| GradientBoostingRegressor  | 0.772826 | 0.226484 |
+
 
 
 ## Cross valadation
 
-Multiple models were evaluated for their performance and compared the R2 and MSE for the models.
-![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/model_performance.png)
+To evaluate the GradientBoostingRegressor model further and check for over fitting, cross valadation is performed.
 
-As you can see from the above image, the model has signifcant amount of error in <x, y, z regions>
 
-| Metric        | Value         |
-| ------------- | ------------- |
-| R2 Score      | 0.11          |
-| MSE           | 0.76          |
-
-The above quant results show that <>
 ## Key Takeaways
 
 What did you learn while building this project? What challenges did you face and how did you overcome them?

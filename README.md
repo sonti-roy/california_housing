@@ -2,7 +2,7 @@
 
 
 # Project Title
-Machine learning model development for predicting median house value 
+**Machine learning model development for predicting house price in california**
 
 
 ## Implementation Details
@@ -42,19 +42,20 @@ It can be downloaded/loaded using the sklearn.datasets.fetch_california_housing 
 - Target: Median house value for California districts, expressed in hundreds of thousands of dollars ($100,000)
 ## Exploratory data analysis
 
-##### 1. Correlation between features were carried out to see if highly correlated features are there, so that redundancy could be removed from the features. 
+1. *Correlation between features were carried out to see if highly correlated features are there, so that redundancy could be removed from the features.* 
 
 ![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/correlation.png)
 
-##### 2. Correlation shows longitude and latitude are highly correlated and one could be removed from the features list.
+2. *Correlation shows longitude and latitude are highly correlated and one could be removed from the features list.*
 ![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/latitude_longitude_scatter_plot.png)
 
 ## Model fitting and evaluation
 
-##### 1. Multiple models were evaluated for their performance and compared the R2 and MSE for the models to select the best model.
+1. *Multiple models were evaluated for their performance and compared the R2 and MSE for the models to select the best model.*
+   
 ![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/model_performance.png)
 
-##### 2. The performance of GradientBoostingRegressor model was found to be the highest with very low MSEerror compared to other models that are evaluated.
+1. *The performance of GradientBoostingRegressor model was found to be the highest with very low MSEerror compared to other models that are evaluated.*
 
 | Model                     | R2        | MSE      |
 |----------------------------|----------|----------|
@@ -66,48 +67,48 @@ It can be downloaded/loaded using the sklearn.datasets.fetch_california_housing 
 | DecisionTreeRegressor      | 0.585701 | 0.413039 |
 | GradientBoostingRegressor  | 0.772826 | 0.226484 |
 
-##### 3. Model prediction comparasion with true values
+3. *Model prediction comparasion with true values*
 
 ![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/true_vs_prediction.png)
 
-Shows a good colinearity which is also visible from the score.
+*Inference - shows a good colinearity which is also visible from the score.*
 
 ## Cross valadation
 
-##### To evaluate the GradientBoostingRegressor model further and check for over fitting, cross valadation is performed.
+*To evaluate the **<u>GradientBoostingRegressor</u>** model further and check for over fitting, cross valadation is performed.*
 
-###### 1. cross validation of the model with complete dataset with cv = 5 shows reduced score than thge model
+1. *Cross validation of the model with complete dataset with cv = 5 shows reduced score than thge model*
         
 | Score 1      | Score 2      | Score 3      | Score 4      | Score 5      |
 |--------------|--------------|--------------|--------------|--------------|
 | 0.62413216   | 0.6943188    | 0.71206383   | 0.65481236   | 0.67672756   |
 
-###### 2. cross validation of the model with split dataset shows similar accuracy as the fitted model.
+2. *Cross validation of the model with split dataset shows similar accuracy as the fitted model.*
 
 | Score 1      | Score 2      | Score 3      | Score 4      | Score 5      |
 |--------------|--------------|--------------|--------------|--------------|
 | 0.78189507   | 0.78282526   | 0.78389246   | 0.80503452   | 0.80055348   |
 
-###### Inference - The model need further tuning to match the score in both the scanerio.
+*Inference - The model need further tuning to match the score in both the scanerio.*
 
 ## Key Takeaways
 
-How to perform a basic Ml model fitting and evaluate the performance of the model.
+*How to perform a basic ML model fitting and evaluate the performance of the model.*
 
 
 ## Code 
 
-The code is is avaiable in a python notebook model.ipynb. To view the code please click below
+*The code is is avaiable in a python notebook **<u>model.ipynb</u>**. To view the code please click below*
 
-[Click here](https://github.com/sonti-roy/california_housing/blob/main/model.ipynb)
+[*Click here*](https://github.com/sonti-roy/california_housing/blob/main/model.ipynb)
 
 
 ## Roadmap
 
-1. **Model Exploration**
-2. **Model Optimization**
-3. **Hyperparameter Tuning**
-4. **Exploring Other Ways to Improve Model**
+1. *Model Exploration*
+2. *Model Optimization*
+3. *Hyperparameter Tuning*
+4. *Exploring Other Ways to Improve Model*
 
 ## Libraries 
 
@@ -117,16 +118,15 @@ The code is is avaiable in a python notebook model.ipynb. To view the code pleas
 
 ## Acknowledgements
 
-All the links, blogs, videos, papers you referred to/took inspiration from for building this project. 
+*Resources used* 
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+ - [scikit-learn](https://scikit-learn.org/stable/index.html)
+ - OpenAI. (2024). ChatGPT (3.5) Large language model. https://chat.openai.com
 
 
 ## Contact
 
-If you have any feedback/are interested in collaborating, please reach out to me at fake@fake.com
+If you have any feedback/are interested in collaborating, please reach out to me at [LinkdIn](https://www.linkedin.com/in/sonti-roy-phd-8589b711a/)
 
 
 ## License
